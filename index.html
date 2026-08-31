@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Surya Madani Publisher — penerbit buku yang menghadirkan karya berkualitas, inspiratif, dan bermanfaat.">
+<title>Surya Madani Publisher</title>
+<style>
+:root{--navy:#102a43;--gold:#d4a017;--cream:#fbf8f0;--text:#243b53;--muted:#627d98;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #e6e8eb}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy);font-size:1.1rem}
+.logo-mark{width:42px;height:42px;border-radius:10px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:21px;font-weight:900}
+nav{display:flex;gap:25px;font-size:.95rem;font-weight:600}
+nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:0;font-size:26px}
+.hero{background:linear-gradient(135deg,var(--navy),#1e4a6e);color:white;padding:88px 0 78px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:rgba(212,160,23,.16);border:1px solid rgba(212,160,23,.45);color:#f5cf69;padding:7px 13px;border-radius:999px;font-size:.85rem;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.05;margin-bottom:22px}
+.hero p{font-size:1.12rem;color:#d9e5ef;max-width:650px;margin-bottom:30px}
+.btns{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 21px;border-radius:8px;font-weight:800;border:1px solid transparent}
+.btn-primary{background:var(--gold);color:#172b3a}
+.btn-primary:hover{filter:brightness(1.06)}
+.btn-light{border-color:#9fb4c5;color:#fff}
+.cover-stack{height:330px;position:relative}
+.book{position:absolute;width:190px;height:270px;border-radius:4px 10px 10px 4px;box-shadow:0 20px 40px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-weight:800}
+.book:after{content:"";position:absolute;left:12px;top:0;bottom:0;width:2px;background:rgba(255,255,255,.25)}
+.book1{right:5px;top:5px;background:#f3dfaa;color:#263746;transform:rotate(7deg)}
+.book2{right:115px;top:40px;background:#8fb6c8;color:#fff;transform:rotate(-7deg)}
+.book3{right:205px;top:15px;background:#c96f4d;color:#fff;transform:rotate(-14deg)}
+section{padding:78px 0}
+.section-head{max-width:700px;margin-bottom:35px}
+.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.8rem}
+h2{font-size:2.15rem;color:var(--navy);margin:8px 0 12px}
+.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border:1px solid #e7eaee;border-radius:14px;padding:25px;background:white;box-shadow:0 8px 25px rgba(16,42,67,.05)}
+.card-icon{font-size:28px;margin-bottom:14px}
+.card h3{color:var(--navy);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+.books{background:var(--cream)}
+.book-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.book-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #e8e2d2}
+.fake-cover{height:250px;display:grid;place-items:center;text-align:center;padding:25px;font-size:1.3rem;font-weight:800;color:#fff}
+.c1{background:#173f5f}.c2{background:#8b5e34}.c3{background:#49796b}
+.book-info{padding:20px}.book-info small{color:var(--gold);font-weight:800}.book-info h3{margin:6px 0;color:var(--navy)}
+.cta{background:var(--navy);color:white;border-radius:18px;padding:48px}
+.cta h2{color:white}.cta p{color:#d9e5ef;max-width:680px;margin-bottom:24px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-box{background:#f7f9fb;border-radius:14px;padding:28px}
+.contact-box p{margin:10px 0;color:var(--muted)}
+footer{background:#0b1f30;color:#c8d4de;padding:32px 0;margin-top:20px}
+.footer-flex{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer strong{color:#fff}
+@media(max-width:800px){
+nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 4%;flex-direction:column;border-bottom:1px solid #eee}
+nav.open{display:flex}.menu{display:block}.hero{padding-top:60px}.hero-grid{grid-template-columns:1fr}.cover-stack{height:280px}.cards,.book-grid,.contact-grid{grid-template-columns:1fr}.cta{padding:32px 25px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a href="#" class="logo"><span class="logo-mark">SM</span><span>Surya Madani Publisher</span></a>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav>
+<a href="#tentang">Tentang</a><a href="#layanan">Layanan</a><a href="#buku">Katalog</a><a href="#penulis">Penulis</a><a href="#kontak">Kontak</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<span class="badge">PENERBIT BUKU INDONESIA</span>
+<h1>Menerbitkan gagasan, menginspirasi generasi.</h1>
+<p>Surya Madani Publisher hadir untuk membantu penulis menghadirkan karya yang berkualitas, bernilai, dan menjangkau pembaca lebih luas.</p>
+<div class="btns"><a class="btn btn-primary" href="#kontak">Ajukan Naskah</a><a class="btn btn-light" href="#buku">Lihat Katalog</a></div>
+</div>
+<div class="cover-stack" aria-label="Ilustrasi koleksi buku">
+<div class="book book3">KARYA<br>INSPIRATIF</div><div class="book book2">ILMU &<br>PENGEMBANGAN</div><div class="book book1">SURYA<br>MADANI<br>PUBLISHER</div>
+</div>
+</div>
+</section>
+
+<section id="tentang">
+<div class="container">
+<div class="section-head"><span class="eyebrow">Tentang Kami</span><h2>Rumah bagi ide-ide yang layak dibaca.</h2><p>Surya Madani Publisher berkomitmen mendukung penulis dan akademisi dalam menghasilkan buku yang relevan, profesional, dan memberi manfaat bagi masyarakat.</p></div>
+<div class="cards">
+<div class="card"><div class="card-icon">📚</div><h3>Karya Berkualitas</h3><p>Proses penerbitan diarahkan untuk menghasilkan buku yang rapi, bernilai, dan siap dibaca.</p></div>
+<div class="card"><div class="card-icon">✍️</div><h3>Ruang untuk Penulis</h3><p>Membuka peluang bagi penulis, akademisi, praktisi, dan komunitas untuk menerbitkan gagasan.</p></div>
+<div class="card"><div class="card-icon">🌐</div><h3>Jangkauan Lebih Luas</h3><p>Mendorong karya agar dapat ditemukan dan dimanfaatkan oleh pembaca di berbagai daerah.</p></div>
+</div>
+</div>
+</section>
+
+<section id="layanan" class="books">
+<div class="container">
+<div class="section-head"><span class="eyebrow">Layanan</span><h2>Solusi penerbitan dari naskah hingga buku.</h2></div>
+<div class="cards">
+<div class="card"><h3>📖 Penerbitan Buku</h3><p>Pendampingan naskah, penyuntingan, desain, layout, ISBN, hingga produksi sesuai kebutuhan.</p></div>
+<div class="card"><h3>🎓 Buku Akademik</h3><p>Untuk dosen, mahasiswa, peneliti, dan praktisi yang ingin mengembangkan karya ilmiah menjadi buku.</p></div>
+<div class="card"><h3>🏢 Buku Institusi</h3><p>Penerbitan buku profil, dokumentasi, sejarah lembaga, laporan, dan karya kelembagaan.</p></div>
+</div>
+</div>
+</section>
+
+<section id="buku">
+<div class="container">
+<div class="section-head"><span class="eyebrow">Katalog</span><h2>Koleksi pilihan Surya Madani</h2><p>Bagian ini dapat diisi dengan cover, judul, sinopsis, harga, dan tautan pembelian buku Anda.</p></div>
+<div class="book-grid">
+<div class="book-card"><div class="fake-cover c1">JUDUL<br>BUKU ANDA</div><div class="book-info"><small>BUKU TERBITAN</small><h3>Judul Buku Pertama</h3><p>Tambahkan sinopsis singkat buku di sini.</p></div></div>
+<div class="book-card"><div class="fake-cover c2">JUDUL<br>BUKU ANDA</div><div class="book-info"><small>BUKU TERBITAN</small><h3>Judul Buku Kedua</h3><p>Tambahkan sinopsis singkat buku di sini.</p></div></div>
+<div class="book-card"><div class="fake-cover c3">JUDUL<br>BUKU ANDA</div><div class="book-info"><small>BUKU TERBITAN</small><h3>Judul Buku Ketiga</h3><p>Tambahkan sinopsis singkat buku di sini.</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="penulis" class="books">
+<div class="container">
+<div class="cta"><span class="eyebrow">Untuk Penulis</span><h2>Punya naskah yang ingin diterbitkan?</h2><p>Kirimkan informasi singkat tentang naskah Anda. Tim Surya Madani Publisher dapat membantu mengarahkan langkah penerbitannya.</p><a class="btn btn-primary" href="#kontak">Konsultasi Penerbitan</a></div>
+</div>
+</section>
+
+<section id="kontak">
+<div class="container">
+<div class="section-head"><span class="eyebrow">Kontak</span><h2>Mari terhubung dengan Surya Madani Publisher.</h2></div>
+<div class="contact-grid">
+<div class="contact-box"><h3>Informasi Penerbit</h3><p><strong>Email:</strong> email@surymadanipublisher.com</p><p><strong>WhatsApp:</strong> +62 8xx-xxxx-xxxx</p><p><strong>Alamat:</strong> Silakan isi alamat kantor/penerbit.</p></div>
+<div class="contact-box"><h3>Ajukan Naskah</h3><p>Untuk pengajuan naskah, siapkan judul, sinopsis, profil penulis, dan naskah sesuai ketentuan penerbit.</p><a class="btn btn-primary" href="mailto:email@surymadanipublisher.com">Kirim Email</a></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="container footer-flex"><div><strong>Surya Madani Publisher</strong><br>Penerbit buku dan pengembang gagasan.</div><div>© <span id="year"></span> Surya Madani Publisher. All rights reserved.</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.querySelector('nav').classList.remove('open'));</script>
+</body>
+</html>
